@@ -1,0 +1,9 @@
+source activate gym-duckietown
+export PYTHONPATH="${PYTHONPATH}:`pwd`"
+git clone https://github.com/duckietown/gym-duckietown.git
+cd gym-duckietown
+conda env create -f environment.yaml
+
+pip install gym
+pip install ipython
+pip install Pillow
